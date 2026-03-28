@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SavannaQuest - Safari GPS Tracker & Offline Maps</title>
+    <meta name="description" content="Track your African safari with offline maps for 10 major national parks. GPS route recording, wildlife tracking, and navigation for Kruger, Serengeti, Etosha & more.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2D5016;
+        }
+        
+        nav .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #E6943D;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #E6943D 0%, #FFB76B 50%, #E6943D 100%);
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '🦁';
+            position: absolute;
+            font-size: 20em;
+            opacity: 0.1;
+            top: -50px;
+            right: -100px;
+            transform: rotate(15deg);
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero .tagline {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .app-badges {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .app-badges a {
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+        
+        .app-badges a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .app-badges img {
+            height: 60px;
+            border-radius: 8px;
+        }
+        
+        .coming-soon {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            background: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2D5016;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 60px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .feature h3 {
+            color: #2D5016;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .feature p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        /* Parks Section */
+        .parks {
+            background: linear-gradient(to bottom, #F5EFE0, #fff);
+            padding: 80px 20px;
+        }
+        
+        .parks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .park-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #E6943D;
+        }
+        
+        .park-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .park-card h3 {
+            color: #2D5016;
+            margin-bottom: 8px;
+            font-size: 1.3em;
+        }
+        
+        .park-card p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            padding: 80px 20px;
+            background: #fff;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #E6943D;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step h3 {
+            color: #2D5016;
+            margin-bottom: 15px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #2D5016 0%, #1A2E0D 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1A2E0D;
+            color: white;
+            padding: 50px 20px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            color: #E6943D;
+            margin-bottom: 15px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #E6943D;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1em;
+            }
+            
+            .section-title {
+                font-size: 2em;
+            }
+            
+            .app-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">🦁 SavannaQuest</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#parks">Parks</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🦁 SavannaQuest</h1>
+        <p class="tagline">Your Ultimate Safari Companion</p>
+        <p class="subtitle">GPS Tracking & Offline Maps for 10 African National Parks</p>
+        
+        <div class="app-badges">
+            <a href="#" title="Coming Soon">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                <span class="coming-soon">Coming Soon</span>
+            </a>
+            <a href="#" title="Coming Soon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                <span class="coming-soon">Coming Soon</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Everything You Need for Your Safari</h2>
+            <p class="section-subtitle">Navigate, track, and explore Africa's wildest places with confidence</p>
+            
+            <div class="feature-grid">
+                <div class="feature">
+                    <span class="feature-icon">🗺️</span>
+                    <h3>Offline Maps</h3>
+                    <p>Pre-loaded maps for 10 major parks. No internet required. Navigate confidently in the most remote locations.</p>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">📍</span>
+                    <h3>GPS Tracking</h3>
+                    <p>Record your safari routes in real-time. Mark wildlife sightings and special moments along your journey.</p>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">🔒</span>
+                    <h3>Privacy First</h3>
+                    <p>All data stays on your device. We never track or share your location. Your safari, your data.</p>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">🚗</span>
+                    <h3>Self-Drive Ready</h3>
+                    <p>Perfect for independent explorers. Navigate park roads confidently without needing a guide.</p>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Lightweight</h3>
+                    <p>Only 150MB total including all 10 parks. Works on any modern smartphone.</p>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">🌍</span>
+                    <h3>Truly Offline</h3>
+                    <p>GPS works without cellular data. Perfect for areas with no cell coverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parks Section -->
+    <section class="parks" id="parks">
+        <div class="container">
+            <h2 class="section-title">10 Iconic African Parks</h2>
+            <p class="section-subtitle">Explore the best safari destinations with detailed offline maps</p>
+            
+            <div class="parks-grid">
+                <div class="park-card">
+                    <h3>🇿🇦 Kruger National Park</h3>
+                    <p>South Africa's legendary wildlife sanctuary</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇹🇿 Serengeti National Park</h3>
+                    <p>Home of the Great Migration</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇳🇦 Etosha National Park</h3>
+                    <p>Namibia's premier wildlife destination</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇧🇼 Chobe National Park</h3>
+                    <p>Africa's elephant capital</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇧🇼 Okavango Delta</h3>
+                    <p>World's largest inland delta</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇹🇿 Ngorongoro Crater</h3>
+                    <p>UNESCO World Heritage Site</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇹🇿 Tarangire National Park</h3>
+                    <p>Land of giants and baobabs</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇰🇪 Amboseli National Park</h3>
+                    <p>Kilimanjaro's elephant paradise</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇰🇪 Tsavo East National Park</h3>
+                    <p>Kenya's largest protected area</p>
+                </div>
+                
+                <div class="park-card">
+                    <h3>🇿🇦 Addo Elephant Park</h3>
+                    <p>South Africa's elephant haven</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Start tracking your safari in three simple steps</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Download & Install</h3>
+                    <p>Get SavannaQuest from the App Store or Google Play. All maps download with the app.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose Your Park</h3>
+                    <p>Select from 10 pre-loaded parks. Maps work completely offline.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Start Your Safari</h3>
+                    <p>Hit "Start Safari" and your route will be recorded automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready for Your Adventure?</h2>
+            <p>Download SavannaQuest and start exploring Africa's wildest places.</p>
+            
+            <div class="app-badges">
+                <a href="#" title="Coming Soon">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
+                </a>
+                <a href="#" title="Coming Soon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SavannaQuest</h3>
+                <p>Your ultimate companion for African safari adventures.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#parks">Parks</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="support.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:support@savannaquest.app">support@savannaquest.app</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Petter Wigstøl. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Made with ❤️ for safari enthusiasts</p>
+        </div>
+    </footer>
+</body>
+</html>
