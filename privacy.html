@@ -215,16 +215,16 @@
         </div>
 
         <div class="section">
-            <h2>Location Data</h2>
+          <h2>Location Data</h2>
             <p>SavannaQuest uses your device's GPS to track your safari routes. Here's exactly what happens with your location data:</p>
             <ul>
-                <li><strong>Stored locally only:</strong> All GPS data is saved directly on your device in the app's private storage</li>
-                <li><strong>Never transmitted:</strong> We never send your location to our servers, third parties, or anyone else</li>
-                <li><strong>You control it:</strong> Delete your data anytime through app settings</li>
-                <li><strong>Only when active:</strong> Location is only tracked when you explicitly start a safari session</li>
-                <li><strong>No background tracking:</strong> We don't track you when the app isn't in active use</li>
-                <li><strong>No geofencing:</strong> We don't monitor when you enter or leave specific areas</li>
-            </ul>
+          <li><strong>Stored locally only:</strong> All GPS data is saved directly on your device in the app's private storage</li>
+         <li><strong>Never transmitted:</strong> We never send your location to our servers, third parties, or anyone else</li>
+        <li><strong>You control it:</strong> Delete your data anytime through app settings</li>
+        <li><strong>Active Safari sessions only:</strong> Location is tracked when you start a Safari session</li>
+        <li><strong>Background tracking during Safari:</strong> When a Safari session is active, we track your location in the background to record your complete route, even if you switch apps or lock your phone. Tracking stops when you end the Safari session.</li>
+        <li><strong>Park boundary detection:</strong> The app monitors when you enter or leave park boundaries to automatically suggest starting/ending Safari sessions. This feature can be disabled in Settings.</li>
+        </ul>
         </div>
 
         <div class="section">
@@ -263,9 +263,10 @@
             <h3>Location Access (Required)</h3>
             <p>Required to track your safari routes and show your position on the map. We request:</p>
             <ul>
-                <li><strong>"While Using the App"</strong> permission on iOS</li>
-                <li><strong>"Precise Location"</strong> for accurate GPS tracking</li>
-                <li>Location data is only collected during active safari sessions</li>
+            <li><strong>"Always Allow"</strong> permission for background tracking during active Safari sessions</li>
+            <li><strong>"Precise Location"</strong> for accurate GPS tracking</li>
+            <li>Location data is only collected during active Safari sessions</li>
+            <li><strong>Park boundary detection:</strong> Monitors when you enter/exit parks (can be disabled in Settings)</li>
             </ul>
             
             <h3>Storage Access (Automatic)</h3>
