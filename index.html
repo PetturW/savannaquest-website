@@ -194,7 +194,8 @@
             padding: 80px 20px;
         }
         
-        .parks-grid {
+       /* Parks Grid - Desktop */
+.parks-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
@@ -202,6 +203,26 @@
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Fix parks grid on mobile */
+    .parks-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 !important;
+    }
+    
+    /* Shorter images on mobile */
+    .park-card img {
+        height: 200px !important;
+    }
+    
+    /* Better card spacing */
+    .park-card {
+        padding: 20px !important;
+    }
 }
         
         .park-card {
