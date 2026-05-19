@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- SEO: this <title> targets the exact search "kruger self drive" -->
+    <title>Kruger Self-Drive Safari: Maps, Routes &amp; Practical Guide | SavannaQuest</title>
+    <meta name="description" content="A practical self-drive guide to Kruger National Park: which gate to use, the best driving routes, where phone signal drops, and how offline GPS maps work.">
+ 
+    <!-- Canonical URL: update the domain if/when you move off github.io -->
+    <link rel="canonical" href="https://savannaquest.app/parks/kruger.html">
+ 
+    <!-- Open Graph: controls how the page looks when shared on social/messaging -->
+    <meta property="og:title" content="Kruger Self-Drive Safari: Maps, Routes &amp; Practical Guide">
+    <meta property="og:description" content="Which gate, the best self-drive routes, signal reality, and how offline maps work in Kruger National Park.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://savannaquest.app/parks/kruger.html">
+ 
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+        h1 {
+            color: #2D5016;
+            border-bottom: 3px solid #E6943D;
+            padding-bottom: 12px;
+            line-height: 1.3;
+        }
+        h2 {
+            color: #2D5016;
+            margin-top: 38px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 24px;
+            margin-bottom: 4px;
+        }
+        a { color: #E6943D; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lead { font-size: 1.08em; }
+        .callout {
+            background: #F5EFE0;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 26px 0;
+        }
+        .route {
+            border-left: 4px solid #E6943D;
+            padding: 4px 0 4px 18px;
+            margin: 22px 0;
+        }
+        .faq-q { font-weight: 600; color: #2D5016; margin-top: 18px; }
+        nav.crumbs { font-size: 0.9em; margin-bottom: 24px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .related a { display: inline-block; margin-right: 16px; }
+    </style>
+ 
+    <!-- ============================================================
+         STRUCTURED DATA
+         Two JSON-LD blocks:
+         1. SoftwareApplication  -> lets Google show price ("Free")
+            and rating in results. Reused on every page; ideally
+            also add it to index.html.
+         2. FAQPage -> makes the FAQ below eligible for Google's
+            expandable "People also ask" rich result.
+         Update ratingValue/ratingCount once you have real reviews,
+         or DELETE the aggregateRating block until then (see notes).
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SavannaQuest",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "description": "Offline GPS maps and route recording for 11 self-drive safari national parks across Africa. No account, no tracking, works with zero signal.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://savannaquest.app"
+    }
+    </script>
+ 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you self-drive in Kruger National Park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Kruger is the most self-drive-friendly major park in Africa. You can enter in your own vehicle, no guide is required, and the main roads are tarred with well-maintained gravel roads connecting most camps and waterholes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need a 4x4 in Kruger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A normal car is fine on Kruger's tarred and main gravel roads in the dry season. A higher-clearance vehicle is more comfortable on some gravel routes and after heavy rain, but it is not a requirement for a standard self-drive trip."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there phone signal in Kruger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Signal is patchy. There is usually coverage near major rest camps such as Skukuza and Satara, but large stretches of road between camps and in the north have no signal at all. GPS positioning still works without signal if your maps are downloaded in advance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are Kruger's gate times?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gates open at sunrise and close at sunset, and the exact times shift month to month. Arriving back late incurs a fine, so always check the current month's gate times on the official SANParks website before you travel."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+ 
+    <nav class="crumbs">
+        <a href="/index.html">SavannaQuest</a> &rsaquo;
+        <a href="/parks/">Parks</a> &rsaquo;
+        Kruger National Park
+    </nav>
+ 
+    <h1>Kruger Self-Drive Safari: Maps, Routes &amp; Practical Guide</h1>
+ 
+    <p class="lead">
+        Kruger National Park is the most self-drive-friendly major
+        park in Africa. You drive your own vehicle, set your own pace,
+        and no guide is required. This guide covers the practical
+        decisions a first self-drive trip turns on &mdash; which gate
+        to use, which routes are worth your time, where your phone
+        will lose signal, and how to navigate when it does.
+    </p>
+ 
+    <h2>Getting There &amp; Choosing Your Gate</h2>
+    <p>
+        Kruger is roughly a 4&ndash;5 hour drive from Johannesburg, or
+        a short flight to one of the nearby airports (Skukuza,
+        Hoedspruit, or Kruger Mpumalanga International near Nelspruit).
+        Which of the nine gates you use should be driven by where you
+        plan to stay and what you want to see:
+    </p>
+    <p>
+        <strong>Phalaborwa Gate</strong> &mdash; best for the central
+        and northern park and the Olifants River area.<br>
+        <strong>Orpen Gate</strong> &mdash; the natural choice for the
+        central grasslands around Satara, the park's strongest
+        predator region.<br>
+        <strong>Paul Kruger Gate</strong> &mdash; closest to Skukuza,
+        the largest rest camp, good for a first trip with the most
+        facilities.
+    </p>
+    <div class="callout">
+        Gates open at sunrise and close at sunset, and the exact
+        times change every month. Returning to camp late carries a
+        fine. Always check the current month's times on the official
+        <a href="https://www.sanparks.org/parks/kruger" rel="nofollow noopener" target="_blank">SANParks
+        Kruger page</a> before you travel &mdash; it is also the
+        authoritative source for live road closures.
+    </div>
+ 
+    <h2>Suggested Self-Drive Routes</h2>
+    <p>
+        Kruger rewards slow, deliberate driving over covering distance.
+        These are three routes that consistently deliver, with the
+        times of day that matter most.
+    </p>
+ 
+    <div class="route">
+        <h3>Olifants River Drive</h3>
+        <p>
+            A river-following route with high game density along the
+            water, especially elephant, hippo, and a wide range of
+            antelope, with strong birdlife. Best driven in the early
+            morning when animals are still moving toward the water.
+            Allow a relaxed half day rather than rushing it.
+        </p>
+    </div>
+ 
+    <div class="route">
+        <h3>Satara Predator Route</h3>
+        <p>
+            The central grasslands around Satara hold Kruger's densest
+            lion population, and this loop is built around the roads
+            where sightings are most frequent. Drive it at first light
+            or in the last hour before gate close, when predators are
+            most active. Patience at quiet waterholes pays off here
+            more than anywhere else in the park.
+        </p>
+    </div>
+ 
+    <div class="route">
+        <h3>A First-Timer's Central Loop</h3>
+        <p>
+            If it is your first visit, base at Skukuza or Satara and
+            do shorter out-and-back drives rather than long transits.
+            You will see more by covering 40&ndash;60 km slowly than
+            by driving 150 km to "get somewhere". Distance is the most
+            common first-trip mistake.
+        </p>
+    </div>
+ 
+    <div class="callout">
+        All three of these routes are pre-loaded in
+        <a href="/index.html">SavannaQuest</a>, so you can follow them
+        on an offline map and record where you actually drove &mdash;
+        useful when there is no signal to drop a normal pin (see the
+        next section).
+    </div>
+ 
+    <h2>Will My Phone Work? (Connectivity Reality)</h2>
+    <p>
+        Plan for no signal as the default. There is usually mobile
+        coverage near the larger rest camps &mdash; Skukuza, Satara,
+        Lower Sabie &mdash; but the long stretches of road between
+        camps, and most of the northern park, have no signal at all.
+        Live navigation apps that stream maps will simply stop working
+        there.
+    </p>
+    <p>
+        The technical point most travellers miss: your phone's
+        <strong>GPS works without any signal or data</strong>. GPS is
+        a one-way satellite signal your phone receives directly. The
+        only thing that fails offline is the <em>map</em> &mdash; so
+        the maps have to be stored on the device <em>before</em> you
+        enter the park. This is precisely the gap SavannaQuest is
+        built for: every Kruger map is pre-loaded, so positioning and
+        route recording keep working with the phone in airplane mode.
+    </p>
+ 
+    <h2>Don't Skip the Paper Map</h2>
+    <p>
+        Carry an official Kruger paper map (the Honeyguide and
+        Tinkers maps are both excellent) alongside whatever app you
+        use. A printed map does not run out of battery, gives you the
+        whole park at a glance for planning the day, and is the
+        sensible backup. Treat a navigation app as a "where am I and
+        how far to camp before gate close" companion, not a
+        replacement for the paper map &mdash; and never follow any app
+        down a road that is signed as closed.
+    </p>
+ 
+    <h2>Quick FAQ</h2>
+ 
+    <p class="faq-q">Can you self-drive in Kruger National Park?</p>
+    <p>
+        Yes. Kruger is the most self-drive-friendly major park in
+        Africa. You enter in your own vehicle, no guide is required,
+        and the main roads are tarred with good gravel roads linking
+        most camps and waterholes.
+    </p>
+ 
+    <p class="faq-q">Do you need a 4x4 in Kruger?</p>
+    <p>
+        No. A normal car is fine on the tarred and main gravel roads
+        in the dry season. Higher clearance is more comfortable on
+        some gravel routes and after heavy rain, but it is not
+        required for a standard self-drive trip.
+    </p>
+ 
+    <p class="faq-q">Is there phone signal in Kruger?</p>
+    <p>
+        Patchy. Expect coverage near major camps like Skukuza and
+        Satara, but none across large stretches of road and most of
+        the north. GPS positioning still works without signal if your
+        maps are downloaded in advance.
+    </p>
+ 
+    <p class="faq-q">What are Kruger's gate times?</p>
+    <p>
+        Gates open at sunrise and close at sunset, with the exact
+        times changing each month. Late return incurs a fine, so
+        check the current month on the official SANParks site before
+        you go.
+    </p>
+ 
+    <h2>Related Parks</h2>
+    <p class="related">
+        <!-- Internal links: keep visitors on-site + help Google
+             understand the park set. Create these pages next. -->
+        <a href="/parks/addo.html">Addo Elephant &rsaquo;</a>
+        <a href="/parks/serengeti.html">Serengeti &rsaquo;</a>
+        <a href="/parks/etosha.html">Etosha &rsaquo;</a>
+    </p>
+ 
+    <footer>
+        <p>
+            <a href="/index.html">SavannaQuest</a> &middot;
+            <a href="/support.html">Support</a> &middot;
+            <a href="/privacy.html">Privacy</a>
+        </p>
+        <p><small>&copy; 2026 Petter Wigst&oslash;l. All rights reserved.</small></p>
+    </footer>
+ 
+</body>
+</html>
