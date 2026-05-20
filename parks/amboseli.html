@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: targets "amboseli self drive" / "amboseli national park map" -->
+    <title>Amboseli Self-Drive Safari: Elephants, Kilimanjaro &amp; Practical Guide | SavannaQuest</title>
+    <meta name="description" content="A practical self-drive guide to Amboseli National Park: which gate to use, the best Kilimanjaro viewpoints, vehicle requirements, the cashless-payment rule, and how offline maps work.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://savannaquest.app/parks/amboseli.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Amboseli Self-Drive Safari: Elephants, Kilimanjaro &amp; Practical Guide">
+    <meta property="og:description" content="Which gate, the Kilimanjaro viewpoints, vehicle requirements, and how offline maps work in Amboseli National Park.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://savannaquest.app/parks/amboseli.html">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Site nav, matched to index.html */
+        nav.site-nav {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin: -40px -20px 24px;
+        }
+        nav.site-nav .nav-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav.site-nav a.logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2D5016;
+            text-decoration: none;
+        }
+        nav.site-nav a.logo:hover { color: #2D5016; }
+
+        /* Hero band */
+        .park-hero {
+            position: relative;
+            height: 280px;
+            margin: 0 -20px 28px;
+            overflow: hidden;
+            background: #2D5016;
+        }
+        .park-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .park-hero .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                rgba(0,0,0,0.15) 0%,
+                rgba(0,0,0,0.55) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px 28px;
+        }
+        .park-hero h1 {
+            color: white;
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            line-height: 1.3;
+        }
+
+        h1 {
+            color: #2D5016;
+            border-bottom: 3px solid #E6943D;
+            padding-bottom: 12px;
+            line-height: 1.3;
+        }
+        h2 {
+            color: #2D5016;
+            margin-top: 38px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 24px;
+            margin-bottom: 4px;
+        }
+        a { color: #E6943D; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lead { font-size: 1.08em; }
+        .callout {
+            background: #F5EFE0;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 26px 0;
+        }
+        .route {
+            border-left: 4px solid #E6943D;
+            padding: 4px 0 4px 18px;
+            margin: 22px 0;
+        }
+        .faq-q { font-weight: 600; color: #2D5016; margin-top: 18px; }
+        nav.crumbs { font-size: 0.9em; margin-bottom: 24px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .related a { display: inline-block; margin-right: 16px; }
+    </style>
+
+    <!-- ============================================================
+         STRUCTURED DATA
+         1. SoftwareApplication -> price ("Free") in results
+         2. FAQPage -> eligible for "People also ask"
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SavannaQuest",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "description": "Offline GPS maps and route recording for 11 self-drive safari national parks across Africa. No account, no tracking, works with zero signal.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://savannaquest.app"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you self-drive in Amboseli National Park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and it is one of the easier Kenyan parks to self-drive. The layout is straightforward, distances from Nairobi are short (about 4 hours), and the main game-drive loops radiate clearly from the central Observation Hill area. A 4x4 is strongly recommended year-round and essential in the rainy seasons (March-May and November)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need a 4x4 in Amboseli?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in practice. The park's roads are graded murram (gravel) and become muddy or impassable in the rainy seasons. A 2WD vehicle can manage the dry-season main loops, but a 4x4 Land Cruiser or Prado is the standard recommendation and what most rental operators provide. The seasonal Lake Amboseli area in the north-west is particularly prone to flooding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which gate should I use for Amboseli?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kimana Gate (south-east) is the main and most-used entry, near the park headquarters and the cluster of lodges around Kimana. Meshanani Gate (north-west) is the standard arrival point if driving from Nairobi via Namanga. Iremito Gate (east) is quieter, and Kitirua Gate (south-west) is the remotest with the strongest Kilimanjaro views."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there phone signal in Amboseli?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Patchy. Safaricom has the strongest coverage of the Kenyan carriers and works reasonably at most lodges and around the main gates. Signal drops in the central swamps and on the western Lake Amboseli loop. GPS positioning still works without any signal if your maps are downloaded in advance."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Site nav with logo linking back to homepage -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="/index.html" class="logo">SavannaQuest</a>
+        </div>
+    </nav>
+
+    <!-- Hero band: park photo with title overlaid -->
+    <section class="park-hero">
+        <img src="/images/amboseli.webp" alt="Amboseli National Park landscape with Kilimanjaro">
+        <div class="hero-overlay">
+            <h1>Amboseli Self-Drive Safari: Elephants, Kilimanjaro &amp; Practical Guide</h1>
+        </div>
+    </section>
+
+    <nav class="crumbs">
+        <a href="/index.html">SavannaQuest</a> &rsaquo;
+        <a href="/parks/">Parks</a> &rsaquo;
+        Amboseli National Park
+    </nav>
+
+    <p class="lead">
+        Amboseli is the easiest of Kenya's major parks to self-drive
+        and arguably the most photogenic. It is a fraction of the
+        size of the Masai Mara and far less crowded with vehicles,
+        the road layout is genuinely simple, and the wildlife &mdash;
+        especially its famously large free-roaming elephant herds
+        &mdash; comes with the snow-capped backdrop of Kilimanjaro on
+        clear mornings. This guide covers what actually matters:
+        which gate, the routes that deliver, when Kilimanjaro is
+        visible, and how to navigate when signal drops.
+    </p>
+
+    <h2>Getting There &amp; Choosing Your Gate</h2>
+    <p>
+        Amboseli is about 240 km south-east of Nairobi, roughly a
+        4-hour drive on the A104 to Emali, then south on a secondary
+        road that becomes graded gravel near the park. This is
+        meaningfully easier and shorter than the Masai Mara &mdash;
+        much of the route is tarred, and you do not need to clear
+        Narok and the C12 climb.
+    </p>
+    <p>
+        The park has four main gates that self-drivers use:
+    </p>
+    <p>
+        <strong>Kimana Gate</strong> (south-east) &mdash; the main
+        and most-developed gate, located near the KWS park
+        headquarters and the cluster of lodges (Tortilis, Kibo,
+        Tawi). The natural choice for most self-drivers and best
+        from the Mombasa road via Emali.<br>
+        <strong>Meshanani Gate</strong> (north-west) &mdash; the
+        common entry for drivers coming directly from Nairobi via
+        Namanga. Close to Amboseli Serena and Ol Tukai lodges.<br>
+        <strong>Iremito Gate</strong> (east) &mdash; quieter, with
+        KWS offices and well-maintained facilities.<br>
+        <strong>Kitirua Gate</strong> (south-west) &mdash; the
+        remotest, in a dry corner near the Tanzanian border and
+        with some of the strongest Kilimanjaro views from the entry
+        road itself.
+    </p>
+    <div class="callout">
+        Two practical quirks to know before you arrive: <strong>park
+        entry is cashless</strong>. Pay by card or M-Pesa at the
+        gate &mdash; some gates do not accept Kenyan shillings in
+        cash at all. And there are <strong>no fuel stations inside
+        the park</strong>. Fill up at Kimana town, Namanga, or
+        Emali before you enter; the central park is a long way back
+        if you misjudge it. Park hours are 6:00 to 18:30; gates
+        close strictly after.
+    </div>
+
+    <h2>When Kilimanjaro Is Visible</h2>
+    <p>
+        Kilimanjaro is what makes Amboseli photographically iconic,
+        but the mountain is famously shy &mdash; cloud cover often
+        hides the summit for hours or whole days. A few practical
+        rules that help:
+    </p>
+    <p>
+        Cloud builds during the day and burns off again overnight.
+        <strong>Early morning (around dawn to about 9:00 am) and
+        late afternoon</strong> are when Kilimanjaro is most often
+        visible. The <strong>cool dry season (June-October)</strong>
+        offers the most reliable sightings; the rainy months are the
+        worst. From inside the park, the strongest viewpoints are
+        the Observation Hill platform looking south and the entry
+        road near Kitirua Gate. Plan around the mountain: if you
+        wake to a clear summit, drop your day's plan and drive
+        toward the elephants in the swamps with Kilimanjaro behind
+        them &mdash; you may not get another chance that trip.
+    </p>
+
+    <h2>Suggested Self-Drive Routes</h2>
+    <p>
+        Amboseli's wildlife concentrates around the central swamps
+        fed by snowmelt and underground springs from Kilimanjaro.
+        Most game viewing is straightforward circuits from one of
+        the main gates through the swamps and back. Speed limit is
+        50 km/h on main roads, 30 km/h on game tracks, and off-road
+        driving is prohibited.
+    </p>
+
+    <div class="route">
+        <h3>Central Swamp Circuit (Enkongo Narok)</h3>
+        <p>
+            Amboseli's signature loop. From Kimana or Meshanani,
+            work the Enkongo Narok swamp on a slow morning drive
+            &mdash; this is where the famous elephant herds bathe
+            and feed, and Kilimanjaro looms behind them when the
+            mountain is clear. Climb Observation Hill mid-loop (the
+            only place in the park where leaving the vehicle is
+            permitted) for the panoramic view. Allow a full morning.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>Longinye Swamp &amp; Eastern Corridor</h3>
+        <p>
+            From Kimana Gate, head along the eastern corridor to
+            Longinye Swamp &mdash; quieter than Enkongo Narok, with
+            excellent birdlife (pelicans, herons, kingfishers) and
+            giraffe and elephant in the acacia woodland. A 2-hour
+            loop that pairs well with the Central Swamp Circuit on
+            the same day.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>Lake Amboseli Loop (Dry Season Only)</h3>
+        <p>
+            The western section follows the boundary of the
+            seasonal Lake Amboseli &mdash; dramatic open plains with
+            dust, sunset light, and Kilimanjaro's full ridgeline
+            visible across the dry lakebed. Best in late afternoon.
+            Avoid this loop in the rainy season; the lake floods and
+            the tracks become impassable.
+        </p>
+    </div>
+
+    <div class="callout">
+        These routes are pre-loaded in
+        <a href="/index.html">SavannaQuest</a>, so you can follow them
+        on an offline map and record where you drove. Amboseli's
+        central swamps are a relatively contained area, but it is
+        easy to miss the best Kilimanjaro vantage points if you do
+        not have a pre-marked route &mdash; particularly on the
+        Lake Amboseli loop where the tracks fork frequently.
+    </div>
+
+    <h2>Will My Phone Work? (Connectivity Reality)</h2>
+    <p>
+        Coverage is better here than in the deeper parks (Tsavo,
+        the Mara's western Triangle, or anywhere in northern Kenya),
+        but expect signal to come and go. Of the Kenyan carriers,
+        <strong>Safaricom</strong> has the strongest Amboseli
+        footprint and is what most lodges and guides use. Signal is
+        reasonable at the main gates and at the lodges; it drops
+        intermittently in the central swamps and on the western Lake
+        Amboseli loop. Live navigation apps that stream maps will
+        not work in those stretches.
+    </p>
+    <p>
+        The technical point most travellers miss: your phone's
+        <strong>GPS works without any signal or data</strong>. GPS is
+        a one-way satellite signal your phone receives directly. The
+        only thing that fails offline is the <em>map</em> &mdash; so
+        the maps have to be stored on the device <em>before</em> you
+        enter the park. This is precisely the gap SavannaQuest is
+        built for: every Amboseli map is pre-loaded, so positioning
+        and route recording keep working with the phone in airplane
+        mode &mdash; useful in particular for logging exactly where
+        you got the Kilimanjaro shot, since you cannot drop a normal
+        pin offline.
+    </p>
+
+    <h2>Don't Skip the Paper Map</h2>
+    <p>
+        KWS provides a paper map at the gates with the official
+        circuits marked, which is the best basic reference and free
+        with your entry. Carry it alongside any app. A printed map
+        gives you the overview you need to plan a day's drive around
+        Kilimanjaro light and gate-closure times, and is the
+        sensible backup if your phone runs out of battery in the
+        Kenyan heat. Treat a navigation app as a "where am I, where
+        is the next swamp, how far to camp" companion, not a
+        replacement.
+    </p>
+
+    <h2>When to Go</h2>
+    <p>
+        The dry seasons &mdash; <strong>June-October</strong> and
+        <strong>January-February</strong> &mdash; are the strongest
+        for both wildlife and Kilimanjaro views. The two rainy
+        seasons (March-May and November) are quieter and cheaper,
+        but Lake Amboseli floods, the dust turns to mud, and the
+        mountain is rarely visible. June through October specifically
+        has the highest concentration of elephant herds in the
+        swamps, when the surrounding ecosystem dries out and animals
+        cluster around the snowmelt-fed water.
+    </p>
+
+    <h2>Quick FAQ</h2>
+
+    <p class="faq-q">Can you self-drive in Amboseli?</p>
+    <p>
+        Yes &mdash; it is genuinely one of the easier Kenyan parks
+        to self-drive. The layout is simple, distances from Nairobi
+        are short, and 4-hour drives in are practical from the
+        capital. A 4x4 is recommended year-round and essential in
+        the rains.
+    </p>
+
+    <p class="faq-q">Do you need a 4x4 in Amboseli?</p>
+    <p>
+        Yes in practice. Roads are gravel and become muddy or
+        impassable in the rainy seasons. Most rental operators
+        provide a Land Cruiser or Prado.
+    </p>
+
+    <p class="faq-q">Which gate should I use?</p>
+    <p>
+        Kimana from the Mombasa road via Emali (main, near park HQ
+        and the lodge cluster). Meshanani from Nairobi via Namanga.
+        Iremito for a quieter entry; Kitirua for Kilimanjaro views.
+    </p>
+
+    <p class="faq-q">Is there phone signal in Amboseli?</p>
+    <p>
+        Patchy. Safaricom has the strongest coverage; expect signal
+        at gates and lodges but drops in the central swamps and
+        Lake Amboseli loop. GPS positioning still works without
+        signal if your maps are downloaded in advance.
+    </p>
+
+    <h2>Related Parks</h2>
+    <p class="related">
+        <a href="/parks/masai-mara.html">Masai Mara &rsaquo;</a>
+        <a href="/parks/tsavo-east.html">Tsavo East &rsaquo;</a>
+        <a href="/parks/serengeti.html">Serengeti &rsaquo;</a>
+    </p>
+
+    <footer>
+        <p>
+            <a href="/index.html">SavannaQuest</a> &middot;
+            <a href="/support.html">Support</a> &middot;
+            <a href="/privacy.html">Privacy</a>
+        </p>
+        <p><small>&copy; 2026 Petter Wigst&oslash;l. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
