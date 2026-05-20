@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: targets "okavango delta self drive" / "moremi self drive map" -->
+    <title>Okavango Delta Self-Drive (Moremi Game Reserve): Practical Guide | SavannaQuest</title>
+    <meta name="description" content="An honest self-drive guide to the Okavango Delta via Moremi Game Reserve: which gate, the four campsites, why 4x4 is essential, and how offline maps work.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://savannaquest.app/parks/okavango-delta.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Okavango Delta Self-Drive (Moremi Game Reserve): Practical Guide">
+    <meta property="og:description" content="Self-driving the Okavango Delta means Moremi Game Reserve. Which gate, vehicle requirements, the camp-booking constraint, and how offline maps work.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://savannaquest.app/parks/okavango-delta.html">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Site nav, matched to index.html */
+        nav.site-nav {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin: -40px -20px 24px;
+        }
+        nav.site-nav .nav-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav.site-nav a.logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2D5016;
+            text-decoration: none;
+        }
+        nav.site-nav a.logo:hover { color: #2D5016; }
+
+        /* Hero band */
+        .park-hero {
+            position: relative;
+            height: 280px;
+            margin: 0 -20px 28px;
+            overflow: hidden;
+            background: #2D5016;
+        }
+        .park-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .park-hero .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                rgba(0,0,0,0.15) 0%,
+                rgba(0,0,0,0.55) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px 28px;
+        }
+        .park-hero h1 {
+            color: white;
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.9em;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            line-height: 1.3;
+        }
+
+        h1 {
+            color: #2D5016;
+            border-bottom: 3px solid #E6943D;
+            padding-bottom: 12px;
+            line-height: 1.3;
+        }
+        h2 {
+            color: #2D5016;
+            margin-top: 38px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 24px;
+            margin-bottom: 4px;
+        }
+        a { color: #E6943D; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lead { font-size: 1.08em; }
+        .callout {
+            background: #F5EFE0;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 26px 0;
+        }
+        .route {
+            border-left: 4px solid #E6943D;
+            padding: 4px 0 4px 18px;
+            margin: 22px 0;
+        }
+        .faq-q { font-weight: 600; color: #2D5016; margin-top: 18px; }
+        nav.crumbs { font-size: 0.9em; margin-bottom: 24px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .related a { display: inline-block; margin-right: 16px; }
+    </style>
+
+    <!-- ============================================================
+         STRUCTURED DATA
+         1. SoftwareApplication -> price ("Free") in results
+         2. FAQPage -> eligible for "People also ask"
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SavannaQuest",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "description": "Offline GPS maps and route recording for 11 self-drive safari national parks across Africa. No account, no tracking, works with zero signal.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://savannaquest.app"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you self-drive in the Okavango Delta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only partially. Most of the Okavango Delta is accessible only by light aircraft or traditional mokoro canoe. The one self-drive entry to the Delta ecosystem is Moremi Game Reserve, which protects the eastern and central Delta and can be entered with your own 4x4. The rest of the Delta — the inner panhandle, the deep waterways, the fly-in lodges — cannot be reached by road."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need a 4x4 for Moremi and the Okavango Delta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely yes. Moremi is 4x4 throughout. Even in the dry season there are water crossings; after rain large sections become waterlogged and impassable, and later dry to deep ruts and thick sand. Most international visitors hire a fully equipped 4x4 with rooftop tent, fridge and recovery gear from operators in Maun, Kasane, Windhoek or Johannesburg."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which gate should I use for Moremi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "South Gate (Maqwee Gate), about 2 hours' drive from Maun, is the standard entry. North Gate (Khwai) connects Moremi to Chobe and Savuti and is used by self-drivers doing the classic Maun-to-Kasane overland route. Most parties enter at South Gate, work their way through Third Bridge and Xakanaxa, and exit at North Gate (or vice versa)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there phone signal in Moremi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Almost none inside the reserve. There is intermittent signal near North Gate (Khwai) and at some campsites, but most of Moremi is genuinely offline. Mascom has the best Botswana safari coverage; most lodges in the wider Delta use Starlink satellite WiFi as the practical solution. GPS positioning still works without any signal if your maps are downloaded in advance."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Site nav with logo linking back to homepage -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="/index.html" class="logo">SavannaQuest</a>
+        </div>
+    </nav>
+
+    <!-- Hero band: park photo with title overlaid -->
+    <section class="park-hero">
+        <img src="/images/okavango-delta.webp" alt="Okavango Delta landscape">
+        <div class="hero-overlay">
+            <h1>Okavango Delta Self-Drive (Moremi Game Reserve)</h1>
+        </div>
+    </section>
+
+    <nav class="crumbs">
+        <a href="/index.html">SavannaQuest</a> &rsaquo;
+        <a href="/parks/">Parks</a> &rsaquo;
+        Okavango Delta / Moremi
+    </nav>
+
+    <p class="lead">
+        Honest first: most of the Okavango Delta is not self-drive
+        country. The famous fly-in lodges, the deep papyrus
+        waterways, the mokoro channels &mdash; you reach those by
+        light aircraft or traditional boat, not by 4x4. There is one
+        exception, and it is significant: <strong>Moremi Game
+        Reserve</strong>, which protects roughly a third of the Delta
+        ecosystem on its eastern and central side, can be entered
+        with your own vehicle. If you are self-driving, Moremi
+        <em>is</em> your Okavango Delta. This guide is about doing
+        it properly.
+    </p>
+
+    <h2>What Self-Drive in the Delta Actually Means</h2>
+    <p>
+        Moremi Game Reserve was established in 1963 by the BaTawana
+        people &mdash; the first wildlife reserve in Africa created by
+        a local community on their own traditional lands. It is the
+        only formally protected part of the Delta open to road
+        access, and the parts you can drive include the <strong>Mopane
+        Tongue</strong> (the higher ground where dry land meets the
+        main channels), <strong>Third Bridge</strong>,
+        <strong>Xakanaxa</strong>, and the <strong>Khwai
+        area</strong> just outside the northern boundary.
+    </p>
+    <p>
+        What you cannot drive: <strong>Chief's Island</strong> (deep
+        in the central Delta, predator-rich, reached only by light
+        aircraft to the airstrips at the luxury lodges), the
+        <strong>panhandle</strong> in the north-west, and almost all
+        of the wider Delta waterways. If those are the experiences you
+        want, you are flying in. Self-drive Moremi is a different
+        trip &mdash; harder, longer, more adventurous &mdash; and
+        worth understanding on its own terms rather than as a
+        budget version of a fly-in safari.
+    </p>
+
+    <h2>Getting There &amp; Choosing Your Gate</h2>
+    <p>
+        Moremi has two main gates, both reached only by 4x4 access
+        roads:
+    </p>
+    <p>
+        <strong>South Gate (Maqwee Gate)</strong> &mdash; the
+        standard entry, about 2 hours' drive from Maun. From Maun
+        north on the tar road to Shorobe (40 km tarred), then 52 km
+        of dirt road to the gate. Most self-drive itineraries start
+        here.<br>
+        <strong>North Gate (Khwai)</strong> &mdash; on the northern
+        boundary of the reserve, used by self-drivers continuing on
+        to or arriving from Chobe and Savuti. Entering at North Gate
+        from the Khwai side involves a river crossing that is usually
+        straightforward but can be treacherous when water levels are
+        high.
+    </p>
+    <p>
+        The classic self-drive route through the reserve goes Maun
+        &rarr; South Gate &rarr; Third Bridge &rarr; Xakanaxa &rarr;
+        North Gate (Khwai), and from Khwai you either turn around or
+        continue north to Savuti and Chobe. Allow at least four
+        nights inside the reserve to do it justice; longer if you
+        can.
+    </p>
+
+    <h2>The Campsite Problem (Read Before Anything Else)</h2>
+    <p>
+        This is the single most important practical fact about
+        self-driving Moremi: <strong>the four public campsites are
+        often fully booked, especially in peak dry season
+        (June&ndash;October), and you cannot just turn up.</strong>
+        Self-drive Moremi without a campsite booking is not viable
+        &mdash; there is no overflow, no nearby town, and no
+        permission to wild-camp inside the reserve. Three different
+        private operators run the four campsites, which adds a quirk
+        you should know about:
+    </p>
+    <p>
+        <strong>South Gate Camp</strong> and <strong>Xakanaxa
+        Camp</strong> are operated by Kwalate Safaris.<br>
+        <strong>Third Bridge Camp</strong> is operated by Xomae
+        Group.<br>
+        <strong>North Gate (Khwai) Camp</strong> is operated by SKL
+        Camps.
+    </p>
+    <div class="callout">
+        Honest note: Kwalate Safaris in particular has a mixed
+        reputation for booking responsiveness &mdash; if you book South
+        Gate or Xakanaxa, confirm and re-confirm well before you
+        fly. Bookings for the dry season should be made many months
+        ahead. If you cannot get the sites you want, two reasonable
+        alternatives: (1) self-drive Moremi in the green season
+        (Apr&ndash;May or Nov&ndash;Dec) when sites are easier to
+        get but some tracks may be flooded, or (2) base outside the
+        reserve in the Khwai Community Concession (north of North
+        Gate) and day-trip in.
+    </div>
+
+    <h2>Suggested Self-Drive Routes</h2>
+
+    <div class="route">
+        <h3>The Classic: South Gate &rarr; Third Bridge &rarr; Xakanaxa &rarr; Khwai</h3>
+        <p>
+            The standard 4-to-5-night itinerary. Enter at South Gate,
+            spend a night there easing into the rhythm, then push
+            northwest to Third Bridge via the meandering track that
+            crosses First and Second Bridges (rickety mopane-log
+            constructions, easy to cross unless water is high). Two
+            nights at Third Bridge, on the edge of the Delta proper
+            with Mboma Island and the Sekiri River nearby. Then to
+            Xakanaxa on the western waterways for boat trips into
+            the heronry and lagoons, and finally up to Khwai at North
+            Gate. The route is roughly 130 km but takes most of a
+            week at game-viewing pace.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>Khwai Community Concession (just outside Moremi)</h3>
+        <p>
+            Often combined with self-drive Moremi as a softer landing.
+            The Khwai community lands sit just north of Moremi's
+            North Gate and allow <em>night drives</em>, which are
+            not permitted anywhere inside Moremi itself. Wildlife
+            crosses freely between the two areas. Booking is easier
+            than for the public campsites inside the reserve.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>Maun-to-Kasane Overland (1&ndash;2 weeks)</h3>
+        <p>
+            The bigger expedition: Maun &rarr; Moremi (South Gate,
+            Third Bridge, Xakanaxa) &rarr; Khwai &rarr; Mababe Gate
+            &rarr; Savuti &rarr; Linyanti &rarr; Chobe Riverfront
+            &rarr; Kasane. The classic northern Botswana overland
+            trip, roughly 600&ndash;700 km of mostly deep sand. For
+            experienced sand drivers in fully equipped 4x4s, with all
+            campsites booked months ahead.
+        </p>
+    </div>
+
+    <div class="callout">
+        These routes are pre-loaded in
+        <a href="/index.html">SavannaQuest</a>, so you can follow them
+        on an offline map and record where you actually drove. In
+        Moremi specifically this matters &mdash; tracks change with
+        water levels each year, signs are sparse, and you will lose
+        signal completely once inside the reserve.
+    </div>
+
+    <h2>Conditions Change Year to Year</h2>
+    <p>
+        Moremi is more variable than most parks. Water levels rise
+        and fall with the annual Delta flood (peak around
+        July&ndash;August), and what was a track last year may be a
+        waterway this year. <strong>Phone ahead.</strong> The DWNP
+        office in Maun, the campsite operators, and overlanding
+        forums all give current information on which roads are
+        passable. Recent self-drivers have reported bridges between
+        the campsites being out of service in some years and tracks
+        between Xakanaxa and Khwai closed during high-water months.
+        Plan a route, then plan a backup.
+    </p>
+
+    <h2>Will My Phone Work? (Connectivity Reality)</h2>
+    <p>
+        Plan for no signal across most of the reserve. Of the
+        Botswana carriers, <strong>Mascom</strong> has the widest
+        safari coverage; Orange Botswana is reasonable in Maun town
+        but weaker in the bush. Inside Moremi expect intermittent
+        signal only near North Gate (Khwai) &mdash; one of the
+        campsites is within sight of a cell tower &mdash; and
+        effectively nothing across the rest of the reserve. Most
+        lodges in the wider Delta now run Starlink satellite WiFi as
+        the evening connectivity solution.
+    </p>
+    <p>
+        The technical point most travellers miss: your phone's
+        <strong>GPS works without any signal or data</strong>. GPS is
+        a one-way satellite signal your phone receives directly. The
+        only thing that fails offline is the <em>map</em> &mdash; so
+        the maps have to be stored on the device <em>before</em> you
+        enter the park. This is precisely the gap SavannaQuest is
+        built for: every Moremi map is pre-loaded, so positioning and
+        route recording keep working with the phone in airplane mode
+        across the reserve.
+    </p>
+
+    <h2>Don't Skip the Paper Map (or the Local Knowledge)</h2>
+    <p>
+        For Moremi more than any other park in our set, carry a
+        proper paper map and supplement it with current local
+        knowledge. The Tracks4Africa atlas or its GPS data is the
+        long-standing gold standard for Botswana navigation. Stop at
+        the DWNP office in Maun before you head north &mdash; they
+        will tell you what is open and what is flooded. Treat any
+        phone app as a position-and-route-recording companion, not a
+        replacement for the paper map and never your single source
+        of truth.
+    </p>
+
+    <h2>When to Go</h2>
+    <p>
+        The dry season (<strong>May to October</strong>) is the
+        strongest time, with the Delta flood paradoxically peaking
+        in July and August &mdash; wildlife is concentrated, tracks
+        are largely passable, and the contrast between flooded
+        channels and dry surrounding bush is at its most dramatic.
+        September and October are the peak game-viewing weeks but
+        also the hardest for campsite bookings. The wet season
+        (November to April) is cheaper and quieter but many tracks
+        become impassable and the park can close to self-drive
+        visitors entirely after heavy rains.
+    </p>
+
+    <h2>Quick FAQ</h2>
+
+    <p class="faq-q">Can you self-drive in the Okavango Delta?</p>
+    <p>
+        Only the Moremi Game Reserve portion of the Delta is
+        self-drive accessible. The rest is fly-in or mokoro only.
+        Moremi is significant enough to be its own destination &mdash;
+        but be clear with yourself that you are not going to see the
+        whole Delta by road.
+    </p>
+
+    <p class="faq-q">Do you need a 4x4 in Moremi?</p>
+    <p>
+        Absolutely. Deep sand, water crossings, and seasonal flooding
+        make Moremi 4x4-only. Most international visitors hire fully
+        equipped vehicles in Maun, Kasane, Windhoek or Johannesburg.
+    </p>
+
+    <p class="faq-q">Which gate should I use?</p>
+    <p>
+        South Gate from Maun for the standard entry. North Gate
+        (Khwai) if you are continuing to or arriving from Chobe and
+        Savuti.
+    </p>
+
+    <p class="faq-q">Is there phone signal in Moremi?</p>
+    <p>
+        Almost none. Intermittent near North Gate, nothing else.
+        Mascom has the best Botswana coverage. GPS positioning still
+        works without signal if your maps are downloaded in advance.
+    </p>
+
+    <h2>Related Parks</h2>
+    <p class="related">
+        <a href="/parks/chobe.html">Chobe &rsaquo;</a>
+        <a href="/parks/etosha.html">Etosha &rsaquo;</a>
+        <a href="/parks/serengeti.html">Serengeti &rsaquo;</a>
+    </p>
+
+    <footer>
+        <p>
+            <a href="/index.html">SavannaQuest</a> &middot;
+            <a href="/support.html">Support</a> &middot;
+            <a href="/privacy.html">Privacy</a>
+        </p>
+        <p><small>&copy; 2026 Petter Wigst&oslash;l. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
