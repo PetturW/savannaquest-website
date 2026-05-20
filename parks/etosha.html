@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: targets "etosha self drive" / "etosha map" -->
+    <title>Etosha Self-Drive Safari: Waterholes, Gates &amp; Practical Guide | SavannaQuest</title>
+    <meta name="description" content="A practical self-drive guide to Etosha National Park: which gate to use, the waterhole-driving model, fee logistics quirk, signal reality, and how offline maps work.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://savannaquest.app/parks/etosha.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Etosha Self-Drive Safari: Waterholes, Gates &amp; Practical Guide">
+    <meta property="og:description" content="Which gate, the waterhole-driving model, fee quirk, and how offline maps work in Etosha National Park.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://savannaquest.app/parks/etosha.html">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Site nav, matched to index.html */
+        nav.site-nav {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin: -40px -20px 24px;
+        }
+        nav.site-nav .nav-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav.site-nav a.logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2D5016;
+            text-decoration: none;
+        }
+        nav.site-nav a.logo:hover { color: #2D5016; }
+
+        /* Hero band */
+        .park-hero {
+            position: relative;
+            height: 280px;
+            margin: 0 -20px 28px;
+            overflow: hidden;
+            background: #2D5016;
+        }
+        .park-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .park-hero .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                rgba(0,0,0,0.15) 0%,
+                rgba(0,0,0,0.55) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px 28px;
+        }
+        .park-hero h1 {
+            color: white;
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            line-height: 1.3;
+        }
+
+        h1 {
+            color: #2D5016;
+            border-bottom: 3px solid #E6943D;
+            padding-bottom: 12px;
+            line-height: 1.3;
+        }
+        h2 {
+            color: #2D5016;
+            margin-top: 38px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 24px;
+            margin-bottom: 4px;
+        }
+        a { color: #E6943D; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lead { font-size: 1.08em; }
+        .callout {
+            background: #F5EFE0;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 26px 0;
+        }
+        .route {
+            border-left: 4px solid #E6943D;
+            padding: 4px 0 4px 18px;
+            margin: 22px 0;
+        }
+        .faq-q { font-weight: 600; color: #2D5016; margin-top: 18px; }
+        nav.crumbs { font-size: 0.9em; margin-bottom: 24px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .related a { display: inline-block; margin-right: 16px; }
+    </style>
+
+    <!-- ============================================================
+         STRUCTURED DATA
+         1. SoftwareApplication -> price ("Free") in results
+         2. FAQPage -> eligible for "People also ask"
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SavannaQuest",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "description": "Offline GPS maps and route recording for 11 self-drive safari national parks across Africa. No account, no tracking, works with zero signal.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://savannaquest.app"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you self-drive in Etosha National Park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Etosha is one of the most self-drive-friendly parks in Africa, alongside Kruger. You drive your own vehicle between waterholes on a network of gravel roads at a 60 km/h limit, with no guide required. A normal 2WD car is fine in the dry season for the main road network."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need a 4x4 in Etosha?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, a 4x4 is not required for the main roads. A standard 2WD vehicle with reasonable ground clearance handles the gravel network in the dry season. A 4x4 is more comfortable on rougher side tracks and useful in the rainy season (November to April), but it is not a requirement for a normal self-drive trip."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which gate should I use for Etosha?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From Windhoek, Anderson Gate in the south (the C38 via Otjiwarongo, about 5 to 6 hours) is the standard entry, closest to Okaukuejo Camp. Von Lindequist Gate in the east is shorter from the Tsumeb direction and closest to Namutoni Camp. Galton Gate in the west and King Nehale in the north are quieter alternatives but with more limited access rules; confirm with your camp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there phone signal in Etosha?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only at the three main rest camps (Okaukuejo, Halali, Namutoni), where MTC has reliable 4G. There is no signal at all on the road network or at the waterholes, which is the majority of where you spend your time. GPS positioning still works without signal if your maps are downloaded in advance."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Site nav with logo linking back to homepage -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="/index.html" class="logo">SavannaQuest</a>
+        </div>
+    </nav>
+
+    <!-- Hero band: park photo with title overlaid -->
+    <section class="park-hero">
+        <img src="/images/etosha.webp" alt="Etosha National Park landscape">
+        <div class="hero-overlay">
+            <h1>Etosha Self-Drive Safari: Waterholes, Gates &amp; Practical Guide</h1>
+        </div>
+    </section>
+
+    <nav class="crumbs">
+        <a href="/index.html">SavannaQuest</a> &rsaquo;
+        <a href="/parks/">Parks</a> &rsaquo;
+        Etosha National Park
+    </nav>
+
+    <p class="lead">
+        Etosha is the most self-drive-friendly park in Africa
+        alongside Kruger, and the most distinctive in character. The
+        landscape is built around a giant salt pan and a network of
+        waterholes where the wildlife concentrates &mdash; so the
+        whole rhythm of the park is different. You do not drive to
+        find animals; you drive between waterholes and wait at them.
+        This guide covers the practical decisions that matter: which
+        gate, the strange fee logistics, how to actually drive the
+        park, where signal exists, and how to navigate when it does
+        not.
+    </p>
+
+    <h2>Getting There &amp; Choosing Your Gate</h2>
+    <p>
+        Most self-drive trips start in Windhoek. The four gates each
+        serve a different approach and a different camp:
+    </p>
+    <p>
+        <strong>Anderson Gate</strong> (south) &mdash; the main and
+        most-used gate, about 5 to 6 hours from Windhoek on the
+        B1/C38 via Otjiwarongo. Closest to Okaukuejo Camp.<br>
+        <strong>Von Lindequist Gate</strong> (east, also called
+        Namutoni Gate) &mdash; the right choice if approaching from
+        Tsumeb or the Onguma area. Closest to Namutoni Camp.<br>
+        <strong>Galton Gate</strong> (west) &mdash; quieter and more
+        remote, closest to Dolomite and Olifantsrus camps. Access has
+        historically been restricted to guests of those camps;
+        confirm with your accommodation before relying on it.<br>
+        <strong>King Nehale Lya Mpingana Gate</strong> (north) &mdash;
+        the least-used gate, useful if approaching from Ondangwa in
+        the far north.
+    </p>
+    <div class="callout">
+        Etosha has a fee-payment quirk worth knowing in advance: you
+        do <em>not</em> pay at the entrance gate. The gate staff
+        check you in and have you fill out a form; you then drive to
+        the nearest main camp (Okaukuejo for Anderson, Namutoni for
+        Von Lindequist) and pay the actual entry fee at the camp
+        reception. Build a little time for this on arrival day, and
+        bring your booking confirmation. Gates open at sunrise and
+        close at sunset; exact times shift through the year, and
+        being late back to camp matters &mdash; you are not allowed to
+        drive in the park after sunset.
+    </div>
+
+    <h2>The Waterhole Model: How Etosha Actually Works</h2>
+    <p>
+        This is the single biggest mental adjustment if you have
+        self-driven other parks. In Kruger or the Mara, you drive
+        and look for animals. In Etosha, especially in the dry
+        season, the animals come to known waterholes &mdash; and your
+        job is to position yourself at one and wait. Drive between
+        waterholes at the 60 km/h gravel speed limit (slower is
+        usually better for spotting), but the real wildlife viewing
+        happens when you stop, switch off, and watch.
+    </p>
+    <p>
+        A few practical notes that follow from this. The main camps
+        (Okaukuejo, Halali, Namutoni) each have their own
+        <strong>floodlit waterhole</strong> inside the camp fence,
+        active through the night &mdash; an experience that doesn't
+        exist in any other major African park. Black rhino, lion, and
+        elephant are all regular visitors. If you only stay outside
+        the park, you miss this entirely, which is the strongest case
+        for booking at least one night inside.
+    </p>
+    <p>
+        One other Etosha quirk: there is no buffalo in the park. You
+        will see lion, elephant, leopard, and the famous Etosha black
+        rhino, so the "Big 4" rather than "Big 5". Mentioning this in
+        case it matters for your trip.
+    </p>
+
+    <h2>Suggested Self-Drive Routes</h2>
+    <p>
+        Distances inside the park are larger than they look on the
+        map. The drive from Namutoni in the east to Okaukuejo in the
+        west is roughly 5 hours of slow driving without stops &mdash;
+        and you should stop. Plan routes around one or two camps
+        rather than trying to cross the whole park in a day.
+    </p>
+
+    <div class="route">
+        <h3>Okaukuejo Waterhole Loop</h3>
+        <p>
+            From Okaukuejo, drive the loops out to Nebrownii, Gemsbokvlakte,
+            and Olifantsbad. These are reliable dry-season waterholes
+            with good visibility. First light and late afternoon
+            deliver the best activity; mid-day is hot and quiet, a
+            good time to return to camp.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>The Etosha Pan Lookout</h3>
+        <p>
+            From the central section between Okaukuejo and Halali,
+            take the spur to the Etosha Lookout right on the edge of
+            the salt pan. The drive briefly leaves the wildlife
+            corridor for an otherworldly white expanse &mdash; one of
+            the rare points where leaving the vehicle is permitted.
+            Worth the short detour even though you won't see much
+            game on the pan itself.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>Halali to Namutoni: The Eastern Waterholes</h3>
+        <p>
+            The eastern section has a different feel from the
+            west &mdash; more wooded, with waterholes like Goas,
+            Chudob, and Klein Namutoni that deliver consistently.
+            Allow a full day moving between them, ideally based at
+            Halali in the middle so you don't push the sunset gate
+            closure.
+        </p>
+    </div>
+
+    <div class="callout">
+        These routes are pre-loaded in
+        <a href="/index.html">SavannaQuest</a>, so you can follow them
+        on an offline map and record where you actually drove. Etosha
+        is one park where this matters specifically because waterhole
+        sightings are location-tied &mdash; logging a good lion sighting
+        at a specific waterhole helps next time, and a normal phone
+        pin won't drop without signal.
+    </div>
+
+    <h2>Will My Phone Work? (Connectivity Reality)</h2>
+    <p>
+        Plan for no signal everywhere except the main camps. Of the
+        Namibian carriers, <strong>MTC</strong> has by far the widest
+        coverage and is reliable at Okaukuejo, Halali, and Namutoni
+        camps with 4G. TN Mobile works at Okaukuejo but is weaker
+        elsewhere. On the road network and at the waterholes themselves
+        &mdash; which is where you spend most of your day &mdash; there
+        is no coverage at all.
+    </p>
+    <p>
+        The technical point most travellers miss: your phone's
+        <strong>GPS works without any signal or data</strong>. GPS is
+        a one-way satellite signal your phone receives directly. The
+        only thing that fails offline is the <em>map</em> &mdash; so
+        the maps have to be stored on the device <em>before</em> you
+        enter the park. This is precisely the gap SavannaQuest is
+        built for: every Etosha map is pre-loaded, so positioning and
+        route recording keep working with the phone in airplane mode
+        between camps and at waterholes.
+    </p>
+
+    <h2>Don't Skip the Paper Map</h2>
+    <p>
+        Carry a proper Etosha paper map alongside any app. The park
+        is large, signage is sparse, distances are bigger than they
+        look, and a printed map of the whole park gives you the
+        overview you need to plan a day's drive around camp
+        gate-closure times. Treat a navigation app as a "where am I,
+        how far to the next waterhole, how far to camp" companion,
+        not a replacement.
+    </p>
+
+    <h2>When to Go</h2>
+    <p>
+        The dry season &mdash; roughly <strong>June to October</strong>
+        &mdash; is the strongest time for Etosha specifically because
+        the waterhole model becomes intense. With no surface water
+        anywhere else, animals concentrate predictably. September
+        and October are the peak. The wet season (November to April)
+        has its own appeal &mdash; greener landscapes, fewer vehicles,
+        better light &mdash; but the wildlife disperses and the
+        waterhole experience is much weaker.
+    </p>
+
+    <h2>Quick FAQ</h2>
+
+    <p class="faq-q">Can you self-drive in Etosha?</p>
+    <p>
+        Yes. Etosha is one of the most self-drive-friendly parks in
+        Africa. A 2WD car is fine in the dry season for the main
+        gravel roads. Speed limit is 60 km/h on roads, 20 km/h in
+        camps.
+    </p>
+
+    <p class="faq-q">Do you need a 4x4 in Etosha?</p>
+    <p>
+        No. A standard 2WD vehicle handles the main gravel network in
+        the dry season. A 4x4 is more comfortable on rougher tracks
+        and in the rainy season but is not required.
+    </p>
+
+    <p class="faq-q">Which gate should I use?</p>
+    <p>
+        Anderson Gate from Windhoek (the standard entry, 5&ndash;6
+        hours). Von Lindequist if approaching from Tsumeb or Onguma.
+        Galton and King Nehale are quieter alternatives with stricter
+        access.
+    </p>
+
+    <p class="faq-q">Is there phone signal in Etosha?</p>
+    <p>
+        Only at the three main camps (MTC 4G is reliable there). No
+        signal on the roads or at waterholes. GPS positioning still
+        works without signal if your maps are downloaded in advance.
+    </p>
+
+    <h2>Related Parks</h2>
+    <p class="related">
+        <a href="/parks/kruger.html">Kruger &rsaquo;</a>
+        <a href="/parks/chobe.html">Chobe &rsaquo;</a>
+        <a href="/parks/okavango-delta.html">Okavango Delta &rsaquo;</a>
+    </p>
+
+    <footer>
+        <p>
+            <a href="/index.html">SavannaQuest</a> &middot;
+            <a href="/support.html">Support</a> &middot;
+            <a href="/privacy.html">Privacy</a>
+        </p>
+        <p><small>&copy; 2026 Petter Wigst&oslash;l. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
