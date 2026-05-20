@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: targets "masai mara self drive" / "masai mara map" -->
+    <title>Masai Mara Self-Drive Safari: Reserve, Triangle &amp; Practical Guide | SavannaQuest</title>
+    <meta name="description" content="A practical self-drive guide to the Masai Mara: which gate to use, where you can and can't self-drive, vehicle requirements, the migration window, and how offline maps work.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://savannaquest.app/parks/masai-mara.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Masai Mara Self-Drive Safari: Reserve, Triangle &amp; Practical Guide">
+    <meta property="og:description" content="Reserve vs Triangle vs Conservancies, which gate, vehicle requirements, the migration window, and how offline maps work in the Masai Mara.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://savannaquest.app/parks/masai-mara.html">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Site nav, matched to index.html */
+        nav.site-nav {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin: -40px -20px 24px;
+        }
+        nav.site-nav .nav-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav.site-nav a.logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2D5016;
+            text-decoration: none;
+        }
+        nav.site-nav a.logo:hover { color: #2D5016; }
+
+        /* Hero band */
+        .park-hero {
+            position: relative;
+            height: 280px;
+            margin: 0 -20px 28px;
+            overflow: hidden;
+            background: #2D5016;
+        }
+        .park-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .park-hero .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                rgba(0,0,0,0.15) 0%,
+                rgba(0,0,0,0.55) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px 28px;
+        }
+        .park-hero h1 {
+            color: white;
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            line-height: 1.3;
+        }
+
+        h1 {
+            color: #2D5016;
+            border-bottom: 3px solid #E6943D;
+            padding-bottom: 12px;
+            line-height: 1.3;
+        }
+        h2 {
+            color: #2D5016;
+            margin-top: 38px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 24px;
+            margin-bottom: 4px;
+        }
+        a { color: #E6943D; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lead { font-size: 1.08em; }
+        .callout {
+            background: #F5EFE0;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 26px 0;
+        }
+        .route {
+            border-left: 4px solid #E6943D;
+            padding: 4px 0 4px 18px;
+            margin: 22px 0;
+        }
+        .faq-q { font-weight: 600; color: #2D5016; margin-top: 18px; }
+        nav.crumbs { font-size: 0.9em; margin-bottom: 24px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .related a { display: inline-block; margin-right: 16px; }
+    </style>
+
+    <!-- ============================================================
+         STRUCTURED DATA
+         1. SoftwareApplication -> price ("Free") in results
+         2. FAQPage -> eligible for "People also ask"
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SavannaQuest",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "description": "Offline GPS maps and route recording for 11 self-drive safari national parks across Africa. No account, no tracking, works with zero signal.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://savannaquest.app"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you self-drive in the Masai Mara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but only in some parts. Self-driving is permitted in the Masai Mara National Reserve and in the Mara Triangle. It is not permitted in the surrounding private Conservancies (Mara North, Naboisho, Olare Motorogi and others), where game drives must be done with a licensed guide. Since mid-2024 gate checks have tightened and most gates expect a high-clearance 4x4."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need a 4x4 in the Masai Mara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A 4x4 with good ground clearance is now required at most gates in practice. Tracks inside the Reserve are unmarked and unpaved, river crossings are common, and the rainy seasons (March to May and November to December) turn many roads into deep mud. There are reports of 2WD vehicles being refused entry at busy gates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which gate should I use for the Masai Mara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From Nairobi most self-drivers use Sekenani Gate (eastern side, accessed via the C12 from Narok, which is fully tarmacked). Oloololo Gate is the main entry for the Mara Triangle on the western side. Talek and Musiara are convenient if your lodge is in those sectors. Avoid the C11 from Narok even if Google Maps suggests it; the C12 is the right road."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there phone signal in the Masai Mara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Patchy. Safaricom has the strongest coverage of the Kenyan carriers in the Mara and is what most lodges and guides use; signal is reasonable on main roads and at camps but drops in remote parts of the Reserve and toward the Tanzanian border. GPS positioning works without any signal if your maps are downloaded in advance."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Site nav with logo linking back to homepage -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="/index.html" class="logo">SavannaQuest</a>
+        </div>
+    </nav>
+
+    <!-- Hero band: park photo with title overlaid -->
+    <section class="park-hero">
+        <img src="/images/masai-mara.webp" alt="Masai Mara National Reserve landscape">
+        <div class="hero-overlay">
+            <h1>Masai Mara Self-Drive Safari: Reserve, Triangle &amp; Practical Guide</h1>
+        </div>
+    </section>
+
+    <nav class="crumbs">
+        <a href="/index.html">SavannaQuest</a> &rsaquo;
+        <a href="/parks/">Parks</a> &rsaquo;
+        Masai Mara National Reserve
+    </nav>
+
+    <p class="lead">
+        The Masai Mara is one of the great wildlife destinations on
+        Earth, the Kenyan half of the same ecosystem that contains
+        the Serengeti. Self-driving the Mara is genuinely possible,
+        but the rules are more complicated than most parks &mdash; the
+        wider ecosystem is split into three different management
+        zones, and self-drive is only allowed in two of them. This
+        guide covers what you actually need to know: where you can
+        and cannot self-drive, which gate to use, what kind of vehicle
+        you need, where the migration is by month, and how to navigate
+        when the tracks are unmarked and there is no signal.
+    </p>
+
+    <h2>Reserve, Triangle, Conservancies &mdash; the Key Distinction</h2>
+    <p>
+        The Mara ecosystem has three management zones. Understanding
+        which is which is the first decision your trip turns on:
+    </p>
+    <p>
+        <strong>Masai Mara National Reserve</strong> &mdash; the main
+        protected area, managed by Narok County, entered through
+        Sekenani and the other reserve gates. Self-drive permitted.
+        Busiest in peak season.<br>
+        <strong>Mara Triangle</strong> &mdash; the western sector
+        managed by the Mara Conservancy trust, entered via Oloololo
+        Gate or via a transit through the Reserve. Self-drive
+        permitted. Quieter and better managed than the Reserve.<br>
+        <strong>Private Conservancies</strong> (Mara North, Naboisho,
+        Olare Motorogi, Ol Kinyei, and others on the northern
+        border) &mdash; <em>self-drive is not allowed</em>. If you
+        stay in a conservancy lodge, game drives are with the
+        lodge's licensed guides only.
+    </p>
+    <div class="callout">
+        This is the most common point of confusion for first-time
+        self-drivers. If your accommodation is in a Conservancy
+        (often the case for higher-end camps in the northern Mara),
+        you cannot drive yourself even if you arrived in your own
+        4x4. Confirm with your lodge before booking.
+    </div>
+
+    <h2>Getting There &amp; Choosing Your Gate</h2>
+    <p>
+        Most self-drive trips start in Nairobi. The drive to
+        Sekenani Gate is roughly 5 to 6 hours: about 4.5 hours from
+        Nairobi to Narok on the A104 and B3, then around 2 more
+        hours from Narok to Sekenani on the C12, which is now fully
+        tarmacked. One important navigation note: do not follow Google
+        Maps if it suggests the C11 as a shortcut from Narok &mdash;
+        the C11 is rough, poorly maintained, and adds significant
+        travel time. The C12 is the right road.
+    </p>
+    <p>
+        Choose your gate based on where you plan to stay and which
+        sector you want to explore:
+    </p>
+    <p>
+        <strong>Sekenani Gate</strong> (east) &mdash; the main and
+        most-used entry, on the C12 from Narok. The natural choice
+        for most self-drivers and for lodges in the central and
+        eastern Reserve.<br>
+        <strong>Oloololo Gate</strong> (west) &mdash; the main entry
+        to the Mara Triangle. Best accessed by entering through
+        Sekenani with a transit permit and crossing the Reserve to
+        the New Mara Bridge.<br>
+        <strong>Talek Gate</strong> (north-central) &mdash; convenient
+        if your lodge is along the Talek River.<br>
+        <strong>Musiara Gate</strong> (north) &mdash; gives quick
+        access to the Marsh Pride area in the northern Reserve.<br>
+        <strong>Oloolaimutia Gate</strong> (east, near Oloolaimutia
+        town) &mdash; quieter than Sekenani, useful for some eastern
+        lodges.
+    </p>
+    <div class="callout">
+        Park fees are charged per 24 hours and have risen in recent
+        years, with peak-season (July&ndash;September) rates higher
+        than the rest of the year. Payment is accepted by card and
+        M-Pesa at gates; bring some cash as backup. Check current
+        rates on the
+        <a href="https://kws.go.ke" rel="nofollow noopener" target="_blank">Kenya
+        Wildlife Service</a> site before you travel. If you are
+        crossing the Reserve to the Triangle, ask for a transit
+        permit at Sekenani so you do not pay the Reserve fee twice.
+    </div>
+
+    <h2>The Migration: When the Mara Matters Most</h2>
+    <p>
+        The Great Migration is most often associated with the
+        Serengeti, but the wildebeest are in the Mara from roughly
+        <strong>July to October</strong>, with the famous Mara River
+        crossings happening in the northern Reserve and Triangle.
+        This is also the peak season for vehicles and prices &mdash;
+        the trade-off for being there at the right time.
+    </p>
+    <p>
+        Outside the migration months, the Mara is still excellent.
+        Resident lion, leopard, cheetah, and elephant populations are
+        among the highest in Africa, and the dry seasons
+        (June&ndash;October and December&ndash;February) deliver
+        consistently good game viewing year-round. The
+        March&ndash;May "long rains" are quieter and cheaper but
+        roads get genuinely difficult.
+    </p>
+
+    <h2>Suggested Self-Drive Routes</h2>
+    <p>
+        The single biggest practical challenge in the Mara is that
+        the internal tracks are unmarked. There is no equivalent to
+        Kruger's road numbers here. Plan deliberate routes around
+        the rivers and known wildlife areas rather than improvising.
+    </p>
+
+    <div class="route">
+        <h3>Sekenani to the Talek &amp; Olare Orok Rivers</h3>
+        <p>
+            The first drive most self-drivers do: enter at Sekenani,
+            head northwest toward the Talek River, and work the
+            Talek and Olare Orok river systems. Big-cat density along
+            these rivers is excellent. Allow most of a day and drive
+            slowly.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>Crossing into the Mara Triangle</h3>
+        <p>
+            From Sekenani, with a transit permit, drive past Keekorok
+            and across the Reserve to the New Mara Bridge into the
+            Triangle. The Triangle is far less crowded, better
+            managed, and during the migration months (Aug&ndash;Oct)
+            is the prime sector for river crossings. Allow 3 to 4
+            hours of slow driving for the crossing itself.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>The Northern Mara River (Aug&ndash;Oct only)</h3>
+        <p>
+            If you are visiting during the crossing window, the
+            northern stretch of the Mara River between the Reserve
+            and Triangle is where the famous wildebeest crossings
+            happen. Crossings are unpredictable &mdash; allow several
+            days, drive slowly, and do not assume you will see one on
+            any given day.
+        </p>
+    </div>
+
+    <div class="callout">
+        These routes are pre-loaded in
+        <a href="/index.html">SavannaQuest</a>, so you can follow them
+        on an offline map and record where you actually drove. In the
+        Mara specifically this matters more than usual &mdash; tracks
+        are not marked on the ground, and on a phone with no signal
+        you cannot drop a normal pin to remember a good sighting
+        location.
+    </div>
+
+    <h2>Will My Phone Work? (Connectivity Reality)</h2>
+    <p>
+        Signal exists, but expect it to come and go. Of the Kenyan
+        carriers, <strong>Safaricom</strong> has by some distance the
+        strongest Mara coverage and is what most lodges and guides
+        use; Airtel works in the broader area but is less reliable in
+        the remote sections. Coverage is reasonable on the main roads
+        and near camps but drops in the deeper parts of the Reserve
+        and toward the Tanzanian border. Live navigation apps that
+        stream maps will simply stop working in those stretches.
+    </p>
+    <p>
+        The technical point most travellers miss: your phone's
+        <strong>GPS works without any signal or data</strong>. GPS is
+        a one-way satellite signal your phone receives directly. The
+        only thing that fails offline is the <em>map</em> &mdash; so
+        the maps have to be stored on the device <em>before</em> you
+        enter the park. This is precisely the gap SavannaQuest is
+        built for: every Masai Mara map is pre-loaded, so positioning
+        and route recording keep working with the phone in airplane
+        mode &mdash; particularly useful in the Mara where tracks are
+        unmarked and getting briefly lost is a normal part of the
+        experience.
+    </p>
+
+    <h2>Don't Skip the Paper Map (or the Guide-for-a-Day Option)</h2>
+    <p>
+        Carry a proper paper map of the Mara ecosystem alongside any
+        app. A printed map gives you the whole region at a glance,
+        does not run out of battery, and is the sensible backup. The
+        Mara has one further option worth knowing about: you can
+        <strong>hire a local ranger at the gate</strong> to ride with
+        you for a day &mdash; the standard advice for first-time
+        self-drivers, since the unmarked tracks and tight wildlife
+        rules make navigation and etiquette harder than at parks like
+        Kruger. One day with a ranger plus subsequent days self-driving
+        is a common, balanced approach.
+    </p>
+
+    <h2>Quick FAQ</h2>
+
+    <p class="faq-q">Can you self-drive in the Masai Mara?</p>
+    <p>
+        In some parts. Self-drive is permitted in the Masai Mara
+        National Reserve and the Mara Triangle, but <strong>not</strong>
+        in the surrounding private Conservancies, where game drives
+        must be with a licensed guide. Since mid-2024, gate checks
+        have tightened.
+    </p>
+
+    <p class="faq-q">Do you need a 4x4 in the Masai Mara?</p>
+    <p>
+        Yes. A 4x4 with good ground clearance is required at most
+        gates in practice. Tracks are unpaved, river crossings are
+        common, and 2WD vehicles are reportedly turned away at busy
+        gates.
+    </p>
+
+    <p class="faq-q">Which gate should I use?</p>
+    <p>
+        Sekenani Gate from Nairobi via the C12 (not the C11) is the
+        standard self-drive entry. Oloololo for the Triangle; Talek
+        or Musiara if your lodge is in those sectors.
+    </p>
+
+    <p class="faq-q">Is there phone signal in the Mara?</p>
+    <p>
+        Patchy. Safaricom has the strongest coverage; expect signal
+        on main roads and at camps but not in the deeper Reserve. GPS
+        positioning still works without signal if your maps are
+        downloaded in advance.
+    </p>
+
+    <h2>Related Parks</h2>
+    <p class="related">
+        <a href="/parks/serengeti.html">Serengeti &rsaquo;</a>
+        <a href="/parks/amboseli.html">Amboseli &rsaquo;</a>
+        <a href="/parks/tsavo-east.html">Tsavo East &rsaquo;</a>
+    </p>
+
+    <footer>
+        <p>
+            <a href="/index.html">SavannaQuest</a> &middot;
+            <a href="/support.html">Support</a> &middot;
+            <a href="/privacy.html">Privacy</a>
+        </p>
+        <p><small>&copy; 2026 Petter Wigst&oslash;l. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
