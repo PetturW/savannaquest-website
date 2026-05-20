@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: targets "chobe self drive" / "chobe national park map" -->
+    <title>Chobe Self-Drive Safari: Riverfront, Savuti &amp; Practical Guide | SavannaQuest</title>
+    <meta name="description" content="A practical self-drive guide to Chobe National Park: the Riverfront vs Savuti split, which gate to use, vehicle requirements, the mid-day rule, and how offline maps work.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://savannaquest.app/parks/chobe.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chobe Self-Drive Safari: Riverfront, Savuti &amp; Practical Guide">
+    <meta property="og:description" content="Riverfront vs Savuti, which gate, vehicle requirements, and how offline maps work in Chobe National Park.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://savannaquest.app/parks/chobe.html">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Site nav, matched to index.html */
+        nav.site-nav {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            margin: -40px -20px 24px;
+        }
+        nav.site-nav .nav-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav.site-nav a.logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2D5016;
+            text-decoration: none;
+        }
+        nav.site-nav a.logo:hover { color: #2D5016; }
+
+        /* Hero band */
+        .park-hero {
+            position: relative;
+            height: 280px;
+            margin: 0 -20px 28px;
+            overflow: hidden;
+            background: #2D5016;
+        }
+        .park-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .park-hero .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                rgba(0,0,0,0.15) 0%,
+                rgba(0,0,0,0.55) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px 28px;
+        }
+        .park-hero h1 {
+            color: white;
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            line-height: 1.3;
+        }
+
+        h1 {
+            color: #2D5016;
+            border-bottom: 3px solid #E6943D;
+            padding-bottom: 12px;
+            line-height: 1.3;
+        }
+        h2 {
+            color: #2D5016;
+            margin-top: 38px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 24px;
+            margin-bottom: 4px;
+        }
+        a { color: #E6943D; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lead { font-size: 1.08em; }
+        .callout {
+            background: #F5EFE0;
+            padding: 18px 22px;
+            border-radius: 8px;
+            margin: 26px 0;
+        }
+        .route {
+            border-left: 4px solid #E6943D;
+            padding: 4px 0 4px 18px;
+            margin: 22px 0;
+        }
+        .faq-q { font-weight: 600; color: #2D5016; margin-top: 18px; }
+        nav.crumbs { font-size: 0.9em; margin-bottom: 24px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        .related a { display: inline-block; margin-right: 16px; }
+    </style>
+
+    <!-- ============================================================
+         STRUCTURED DATA
+         1. SoftwareApplication -> price ("Free") in results
+         2. FAQPage -> eligible for "People also ask"
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SavannaQuest",
+      "operatingSystem": "iOS",
+      "applicationCategory": "TravelApplication",
+      "description": "Offline GPS maps and route recording for 11 self-drive safari national parks across Africa. No account, no tracking, works with zero signal.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://savannaquest.app"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you self-drive in Chobe National Park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but the difficulty depends on which section. The Chobe Riverfront from Kasane is genuinely easy and one of the few sections of Botswana you can enter as a day-tripper without a campsite booking. Savuti and Linyanti, deeper in the park, are demanding deep-sand 4x4 self-drive territory requiring pre-booked accommodation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you need a 4x4 in Chobe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Savuti and the Linyanti transfer roads, a proper 4x4 with low range is essential — these are deep-sand tracks not negotiable in a standard vehicle. The Riverfront is sandy in places but mostly flat and wide; many self-drivers do it in a soft-roader, though a 4x4 remains the recommended choice. Most international visitors hire a fully equipped 4x4 with rooftop tent from operators in Kasane, Maun or Johannesburg."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which gate should I use for Chobe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sedudu Gate, about 8 km west of Kasane, is the main entry and the right choice for almost every Riverfront day trip. Ngoma Gate is useful if you are entering from Namibia's Caprivi Strip. Ghoha Gate (north) and Mababe Gate (south) are the deep-park access points for Savuti — Ghoha from the Kasane side via the Linyanti sand road, Mababe from Maun via the Mababe Depression."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there phone signal in Chobe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reasonable around Kasane and at the lodges on the Riverfront, but signal drops sharply inside the park and is non-existent in Savuti and Linyanti. Mascom is the dominant Botswana carrier and has the best Chobe coverage; Orange Botswana is reasonable in Kasane town. GPS positioning still works without any signal if your maps are downloaded in advance."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Site nav with logo linking back to homepage -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="/index.html" class="logo">SavannaQuest</a>
+        </div>
+    </nav>
+
+    <!-- Hero band: park photo with title overlaid -->
+    <section class="park-hero">
+        <img src="/images/chobe.webp" alt="Chobe National Park landscape">
+        <div class="hero-overlay">
+            <h1>Chobe Self-Drive Safari: Riverfront, Savuti &amp; Practical Guide</h1>
+        </div>
+    </section>
+
+    <nav class="crumbs">
+        <a href="/index.html">SavannaQuest</a> &rsaquo;
+        <a href="/parks/">Parks</a> &rsaquo;
+        Chobe National Park
+    </nav>
+
+    <p class="lead">
+        Chobe is two very different parks sharing one name. The
+        <strong>Chobe Riverfront</strong> near Kasane is one of the
+        easiest self-drives in Africa &mdash; tarred access roads,
+        a day-trip-friendly loop, the highest concentration of
+        elephants on the continent, and you can drive it without a
+        confirmed booking inside the park. <strong>Savuti and
+        Linyanti</strong>, deeper to the south and west, are
+        something else entirely: deep-sand 4x4 country with strict
+        pre-booking and a real expedition feel. This guide covers
+        both honestly, so you can decide which Chobe trip is yours
+        and what you need to prepare for.
+    </p>
+
+    <h2>Two Chobes &mdash; Which One Are You Doing?</h2>
+    <p>
+        This is the decision the rest of your planning hinges on.
+        Chobe National Park has three main sections, with very
+        different requirements:
+    </p>
+    <p>
+        <strong>Chobe Riverfront</strong> &mdash; the strip along the
+        Chobe River from Sedudu Gate to Ngoma. Day-trippable from
+        Kasane, no campsite booking required, sandy tracks but flat
+        and well-defined. The easiest self-drive option in northern
+        Botswana.<br>
+        <strong>Savuti</strong> &mdash; central Chobe, famous for
+        predators and the seasonal Savuti Channel. Reached only via
+        deep-sand 4x4 tracks (Linyanti road from the north or Mababe
+        from the south). Campsites must be booked months ahead and
+        are often fully reserved.<br>
+        <strong>Linyanti</strong> &mdash; remote north-western marsh
+        and woodland, the wildest of the three. Reached via the same
+        Linyanti sand road. Extremely limited accommodation.
+    </p>
+    <div class="callout">
+        If you are arriving in Kasane on short notice with a hired
+        vehicle and no advance Botswana camping reservations, the
+        Riverfront is realistic; Savuti and Linyanti almost
+        certainly are not. The whole northern Botswana booking
+        system &mdash; Chobe interior, Moremi, Khwai, the community
+        concessions &mdash; runs months ahead, particularly for the
+        June&ndash;October peak. Confirm sites before you fly.
+    </div>
+
+    <h2>Getting There &amp; Choosing Your Gate</h2>
+    <p>
+        Most self-drive trips begin in Kasane or Maun, the two
+        gateway towns at opposite ends of the park system. Kasane
+        sits at the &quot;Four Corners&quot; meeting point of
+        Botswana, Namibia, Zimbabwe and Zambia, with a small
+        international airport and a one-hour drive from Victoria
+        Falls. Maun is the gateway from the south, with road and
+        air links to the rest of Botswana and the wider Delta
+        ecosystem.
+    </p>
+    <p>
+        <strong>Sedudu Gate</strong> (east, near Kasane) &mdash; the
+        main and most-used entry, about 8 km from Kasane town.
+        Opens 06:00, closes 18:30 in April&ndash;September and 19:00
+        in October&ndash;March.<br>
+        <strong>Ngoma Gate</strong> (west) &mdash; on the Riverfront
+        near the Namibian border. The natural entry if you are
+        coming across the Ngoma Bridge from the Caprivi Strip.<br>
+        <strong>Ghoha Gate</strong> (north of Savuti) &mdash; remote;
+        reached via the Linyanti sand track from the Riverfront.
+        Not for first-time self-drivers in Botswana.<br>
+        <strong>Mababe Gate</strong> (south of Savuti) &mdash; the
+        classic Maun-to-Savuti entry via the Mababe Depression.
+        Deep sand, full 4x4 only.
+    </p>
+
+    <h2>The Mid-Day Rule (Important Surprise)</h2>
+    <p>
+        Chobe has a rule that catches most first-time self-drivers
+        off guard: in busy periods, prime game-viewing hours are
+        reserved for licensed tour operators. Operators get the
+        <strong>dawn-to-09:00 and 14:30-to-sunset</strong> slots;
+        day-trippers and self-drivers get the middle of the day
+        (roughly 09:00 to 14:30). The reasoning is congestion
+        control on the narrow Riverfront tracks, but the practical
+        effect is real &mdash; you will see less wildlife in the
+        mid-day heat than you would at golden hour.
+    </p>
+    <p>
+        Two ways to work with it: stay <em>inside</em> the park at
+        Ihaha Campsite (when bookable) so you are already at the
+        Riverfront at dawn, or take a separate sunset boat cruise
+        from Kasane &mdash; the Chobe River from a boat at golden
+        hour is exceptional and not subject to the road rules.
+        Check with rangers at Sedudu when you arrive; the rule is
+        applied flexibly.
+    </p>
+
+    <h2>Suggested Self-Drive Routes</h2>
+
+    <div class="route">
+        <h3>The Riverfront Loop &mdash; Sedudu to Serondela</h3>
+        <p>
+            The classic introduction. Enter Sedudu at opening,
+            follow the Riverfront tracks west toward the Serondela
+            picnic site and Ihaha Campsite, turn around, return via
+            the inland alternative if conditions allow, and exit
+            before gate close. Around 80 km round trip taking 8&ndash;9
+            hours at game-viewing pace. Expect huge elephant herds,
+            hippo, buffalo, kudu, fish eagles, and lion if you are
+            patient. No camping kit required.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>Ngoma-to-Sedudu Transit Drive</h3>
+        <p>
+            If you are crossing from Namibia, do not take the
+            sealed A33 transit road. Enter at Ngoma instead and
+            drive the river track east to Sedudu &mdash; four hours
+            of outstanding game viewing that is almost on your way
+            anyway. Works equally well in reverse if you are exiting
+            to Namibia.
+        </p>
+    </div>
+
+    <div class="route">
+        <h3>The Northern Botswana Classic (4x4 expedition)</h3>
+        <p>
+            Kasane &rarr; Ngoma Gate &rarr; Linyanti transfer road
+            &rarr; Ghoha Gate &rarr; Savuti. Roughly 220 km, almost
+            all of it deep sand. Most parties overnight at Linyanti
+            Campsite mid-route or push through to Savuti
+            Campsite. Savuti itself rewards 2&ndash;3 full days of
+            game driving &mdash; the Marsh area, the predator
+            hotspots around the airstrip, and the Channel if it is
+            flowing that year. This route is for experienced sand
+            drivers in fully equipped 4x4s only.
+        </p>
+    </div>
+
+    <div class="callout">
+        These routes are pre-loaded in
+        <a href="/index.html">SavannaQuest</a>, so you can follow them
+        on an offline map and record where you actually drove. In
+        Savuti and Linyanti specifically this matters &mdash; the
+        sand tracks are unmarked, signal is non-existent, and Google
+        Maps is unreliable to the point of being dangerous. Carry
+        offline maps and a paper backup, not just one of them.
+    </div>
+
+    <h2>Will My Phone Work? (Connectivity Reality)</h2>
+    <p>
+        Plan for no signal anywhere meaningful inside the park. Of
+        the Botswana carriers, <strong>Mascom</strong> has the widest
+        coverage and is the best choice for safari travel; Orange
+        Botswana is reasonable in Kasane town but weaker in the
+        bush; BTC Mobile is moderate. On the Riverfront you will get
+        intermittent signal near Kasane and at the lodges, but
+        inside the park itself coverage drops to nothing. In Savuti
+        and Linyanti there is no signal at all. Most lodges in
+        northern Botswana now have Starlink satellite WiFi as the
+        practical evening solution.
+    </p>
+    <p>
+        The technical point most travellers miss: your phone's
+        <strong>GPS works without any signal or data</strong>. GPS is
+        a one-way satellite signal your phone receives directly. The
+        only thing that fails offline is the <em>map</em> &mdash; so
+        the maps have to be stored on the device <em>before</em> you
+        enter the park. This is precisely the gap SavannaQuest is
+        built for: every Chobe map is pre-loaded, so positioning and
+        route recording keep working with the phone in airplane mode
+        across the Riverfront, the Linyanti road, and Savuti.
+    </p>
+
+    <h2>Don't Skip the Paper Map</h2>
+    <p>
+        In Chobe more than most parks, carry a proper paper map. The
+        deep-park tracks are not all on consumer mapping apps,
+        Google Maps in particular cannot be trusted in this area,
+        and Tracks4Africa is the long-standing gold standard for
+        Botswana navigation &mdash; either as a paper atlas or
+        loaded onto a dedicated GPS unit. Treat any phone app as a
+        position-and-route-recording companion, not your single
+        source of truth.
+    </p>
+
+    <h2>When to Go</h2>
+    <p>
+        The dry season (<strong>April to October</strong>) is the
+        strongest time for game viewing, with September and October
+        the absolute peak &mdash; surface water disappears
+        elsewhere and elephant numbers along the Chobe River reach
+        their famous concentrations. This is also the busiest and
+        most expensive period and when in-park bookings are hardest
+        to secure. The wet season (November to March) is cheaper
+        and quieter; some Savuti and Linyanti tracks become
+        impassable.
+    </p>
+
+    <h2>Quick FAQ</h2>
+
+    <p class="faq-q">Can you self-drive in Chobe?</p>
+    <p>
+        Yes &mdash; the Riverfront is genuinely easy and a rare
+        Botswana section you can do as a day-tripper without
+        booking inside the park. Savuti and Linyanti are deep-sand
+        4x4 territory requiring pre-booked accommodation and
+        experience.
+    </p>
+
+    <p class="faq-q">Do you need a 4x4 in Chobe?</p>
+    <p>
+        Strongly recommended even on the Riverfront, and absolutely
+        required for Savuti, Linyanti, and the transfer roads
+        between them. Most international self-drivers hire a fully
+        equipped 4x4 (rooftop tent, fridge, recovery gear) from
+        operators in Kasane, Maun, Windhoek or Johannesburg.
+    </p>
+
+    <p class="faq-q">Which gate should I use?</p>
+    <p>
+        Sedudu from Kasane for almost every Riverfront day trip.
+        Ngoma if entering from the Caprivi Strip. Mababe and Ghoha
+        for the deep-park Savuti routes.
+    </p>
+
+    <p class="faq-q">Is there phone signal in Chobe?</p>
+    <p>
+        Patchy around Kasane and the Riverfront lodges, nothing in
+        Savuti or Linyanti. Mascom has the best Botswana coverage.
+        GPS positioning still works without signal if your maps are
+        downloaded in advance.
+    </p>
+
+    <h2>Related Parks</h2>
+    <p class="related">
+        <a href="/parks/okavango-delta.html">Okavango Delta &rsaquo;</a>
+        <a href="/parks/etosha.html">Etosha &rsaquo;</a>
+        <a href="/parks/kruger.html">Kruger &rsaquo;</a>
+    </p>
+
+    <footer>
+        <p>
+            <a href="/index.html">SavannaQuest</a> &middot;
+            <a href="/support.html">Support</a> &middot;
+            <a href="/privacy.html">Privacy</a>
+        </p>
+        <p><small>&copy; 2026 Petter Wigst&oslash;l. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
